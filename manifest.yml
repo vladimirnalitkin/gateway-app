@@ -1,0 +1,12 @@
+applications:
+- name: gateway-app
+  instances: 1
+  memory: 512M
+  path: ./target/gateway-application-0.0.1-SNAPSHOT.jar
+  services:
+    - config-server
+    - service-registry
+  #  - circuit-breaker-dashboard
+  #routes:
+  #- route: trapps-api.api.system.luxoft-pcf.com
+
